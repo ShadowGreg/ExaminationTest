@@ -1,6 +1,5 @@
 ﻿var lenght = int.Parse(Prompt("Введите длину массива > "));
 var stringArray = new string[lenght];
-var outputArrayCount = 0;
 
 //Заполнение с выводом передаваемого сообщения
 string Prompt(string message)
@@ -40,6 +39,7 @@ inputItemsArray(stringArray);
 // Создание ответного массива 
 var outputArray = new string[CountItems(stringArray)];
 // Заполняем ответный массив
+var outputArrayCount = 0;
 foreach (var t in stringArray)
 {
     if (t.Length <= 3)
